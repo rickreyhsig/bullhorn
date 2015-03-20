@@ -31,6 +31,8 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
+  
+  config.action_mailer.default_url_options = {host: 'nitro-tires-63-201827.use1-2.nitrousbox.com', port:4322}
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
