@@ -1,0 +1,12 @@
+<h1>Listing moos</h1>
+
+<% @moos.each do |moo| %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <%= moo.context %>
+  </div>
+</div>
+<% end %>
+<br>
+
+<%= link_to 'New Moo', new_moo_path %>
