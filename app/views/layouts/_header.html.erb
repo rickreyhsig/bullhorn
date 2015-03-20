@@ -9,7 +9,12 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand" href="/"><i class="fa fa-bullhorn"></i>Bullhorn</a> -->
-      <%= link_to "<i class='fa fa-bullhorn'></i> Bullhorn".html_safe, root_path, class: "navbar-brand" %>
+      
+      <% if current_user%>
+        <%= link_to "<i class='fa fa-bullhorn'></i> View Moos".html_safe, moos_path, class: "navbar-brand" %>
+      <% else %>
+        <%= link_to "<i class='fa fa-bullhorn'></i> Bullhorn".html_safe, root_path, class: "navbar-brand" %>
+      <% end %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
