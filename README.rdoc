@@ -1,7 +1,7 @@
-== README
-
 The Bullhorn app - a Twitter like app
 
-* Ruby version 2.1.1-p76 (x86_64-linux)
+* Ruby version 2.0.0
 
 * Rails version	4.1.0
+
+See it in action at <https://bullhorn-app.herokuapp.com/>
