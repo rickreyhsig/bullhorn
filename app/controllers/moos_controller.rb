@@ -5,7 +5,7 @@ class MoosController < ApplicationController
   respond_to :html
 
   def index
-    @moos = Moo.all
+    @moos = Moo.order('updated_at DESC')
     respond_with(@moos)
   end
 
